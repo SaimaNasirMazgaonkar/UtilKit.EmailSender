@@ -168,6 +168,17 @@ Cloud Secrets > Environment Variables > appsettings.json > Inline code
 
 Higher priority sources override lower ones. Your SMTP credentials can come from any source — the package doesn't need to know.
 
+## Disclaimer
+
+This package is provided **"as is"** without warranty of any kind. The author(s) are not responsible for any damages, data loss, security breaches, or issues arising from the use of this package. It is the consumer's responsibility to:
+
+- Test thoroughly in their environment before production use
+- Never store SMTP credentials in source code or appsettings.json
+- Use environment variables or cloud secret managers for sensitive data
+- Comply with email sending regulations (CAN-SPAM, GDPR, etc.)
+
+Use at your own risk.
+
 ## License
 
 MIT
